@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-[#022c22]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luthfi Aditya | Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="min-h-screen text-zinc-400 antialiased selection:bg-brand-700 selection:text-white relative z-0 overflow-x-hidden">
+
+    <div class="fixed inset-0 w-full h-screen bg-gradient-to-br from-brand-950 via-[#03150f] to-brand-950 z-[-3] pointer-events-none transform-gpu"></div>
+
+    <canvas id="network-canvas" class="fixed inset-0 w-full h-full z-[-2] pointer-events-none opacity-60 transform-gpu"></canvas>
+    <div class="ambient-glow transform-gpu"></div>
+
+    <header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500 bg-transparent border-b border-transparent transform-gpu">
+        <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#" class="font-serif text-2xl font-semibold text-brand-100 tracking-wide drop-shadow-md">Luthfi.</a>
+            <nav class="flex items-center gap-2 text-xs font-medium tracking-widest uppercase">
+                <a href="#about" class="nav-link relative px-4 py-2 rounded-full text-zinc-400 hover:text-white hover:font-bold hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300">About</a>
+                <a href="#projects" class="nav-link relative px-4 py-2 rounded-full text-zinc-400 hover:text-white hover:font-bold hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300">Work</a>
+                <a href="#tech" class="nav-link relative px-4 py-2 rounded-full text-zinc-400 hover:text-white hover:font-bold hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300">Tech</a>
+                <a href="#contact" class="nav-link relative px-4 py-2 rounded-full text-zinc-400 hover:text-white hover:font-bold hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="pt-40 pb-24 px-6 max-w-6xl mx-auto flex flex-col justify-center min-h-[85vh]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            
+            <div class="relative z-10 flex flex-col reveal-left">
+                <p class="text-xs font-medium tracking-widest uppercase text-brand-400 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-[1px] bg-brand-600"></span> Web Developer & IT Junior Specialist
+                </p>
+                
+                <h1 class="text-5xl md:text-7xl font-serif font-semibold text-white leading-tight mb-8 tracking-tight glow-text drop-shadow-[0_0_15px_rgba(16,185,129,0.1)] transform-gpu">
+                    Luthfi Aditya
+                </h1>
+
+                <div class="terminal-container mb-12 p-6 rounded-lg bg-[#01120c]/60 border border-brand-800/50 border-l-4 border-l-brand-500 shadow-[0_0_20px_rgba(16,185,129,0.05)]">
+                    <p id="typing-tagline" class="font-mono text-zinc-300 font-medium text-sm md:text-base leading-loose">
+                        </p>
+                </div>
+
+                <p class="text-zinc-400 max-w-2xl leading-loose font-light mb-12 text-sm md:text-base">
+                    An Informatics graduate from Telkom University, dedicated to software engineering, IT infrastructure, and data integration. I am deeply passionate about forging efficient web-based solutions, orchestrating open data portals, and exploring the evolving frontiers of artificial intelligence.
+                </p>
+                
+                <div class="flex items-center gap-4">
+                    <a href="#contact" class="inline-flex items-center justify-center border border-brand-600 text-brand-100 hover:bg-brand-500 hover:text-white hover:border-brand-500 hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] transition-all duration-500 ease-out px-8 py-4 text-xs tracking-widest uppercase active:scale-95 group rounded-sm">
+                        Let's Connect
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                    
+                    <div class="flex items-center gap-4 ml-4">
+                        <a href="https://www.linkedin.com/in/luthfi-aditya-7b1185181/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center w-12 h-12 rounded-full bg-white/5 border border-white/10 hover:bg-brand-500/20 hover:border-brand-400 hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all duration-500 hover:-translate-y-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-zinc-400 group-hover:text-brand-100 transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/luthfidty" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center w-12 h-12 rounded-full bg-white/5 border border-white/10 hover:bg-brand-500/20 hover:border-brand-400 hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all duration-500 hover:-translate-y-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-zinc-400 group-hover:text-brand-100 transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative order-first md:order-last mb-16 md:mb-0 reveal-right delay-200">
+                <div class="relative max-w-[360px] mx-auto group">
+                    
+                    <div class="absolute -top-4 -right-4 w-16 h-16 border-t-2 border-r-2 border-brand-600/40 z-0 transition-all duration-700 ease-out group-hover:border-brand-400 group-hover:-top-6 group-hover:-right-6"></div>
+                    <div class="absolute -bottom-4 -left-4 w-16 h-16 border-b-2 border-l-2 border-brand-600/40 z-0 transition-all duration-700 ease-out group-hover:border-brand-400 group-hover:-bottom-6 group-hover:-left-6"></div>
+                    <div class="absolute inset-0 bg-brand-500/10 z-0 group-hover:opacity-100 opacity-60 transition-opacity duration-1000 transform-gpu"></div>
+                    
+                    <div class="ide-window relative overflow-hidden rounded-xl border border-brand-800/60 bg-[#050505] z-10 flex flex-col transform-gpu">
+                        
+                        <div class="w-full bg-[#0a0a0a] border-b border-brand-800/40 px-4 py-2.5 flex items-center justify-between z-20">
+                            <div class="flex gap-1.5">
+                                <div class="w-2.5 h-2.5 rounded-full bg-zinc-700 group-hover:bg-[#ff5f56] transition-colors duration-500 delay-100"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-zinc-700 group-hover:bg-[#ffbd2e] transition-colors duration-500 delay-200"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-zinc-700 group-hover:bg-[#27c93f] transition-colors duration-500 delay-300"></div>
+                            </div>
+                            <p class="text-[10px] font-mono text-zinc-500 tracking-widest group-hover:text-brand-400 transition-colors duration-500">profile.jpg</p>
+                            <div class="w-8"></div> </div>
+
+                        <div class="relative aspect-[4/5] w-full overflow-hidden bg-[#010806]">
+                            <img src="img/footo1.jpeg" alt="Luthfi Aditya" class="glitch-hover w-full h-full object-cover grayscale-[60%] contrast-125 opacity-80 transition-all duration-700 ease-out transform group-hover:scale-[1.02]">
+                            
+                            <div class="scanlines absolute inset-0 z-10 opacity-40 group-hover:opacity-20 transition-opacity duration-500 transform-gpu"></div>
+                            
+                            <div class="absolute inset-0 z-20 bg-gradient-to-t from-[#050505] via-[#050505]/30 to-transparent pointer-events-none opacity-90 transform-gpu"></div>
+                            
+                            <div class="absolute top-2 right-2 text-[8px] font-mono text-brand-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 z-10 pointer-events-none">
+                                01001100<br>01110101<br>01110100
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute top-1/4 -translate-y-1/2 -left-6 md:-left-12 bg-[#050505]/95 border border-brand-800/60 p-4 rounded-lg shadow-[0_10px_30px_rgba(0,0,0,0.5)] z-30 transition-all duration-700 ease-out group-hover:-translate-y-3 group-hover:-translate-x-2 group-hover:border-brand-500/50 premium-card font-mono text-xs w-[160px] transform-gpu">
+                        <p class="text-zinc-400 mb-2"><span class="text-pink-500">const</span> <span class="text-blue-400">stack</span> <span class="text-brand-400">=</span> [</p>
+                        <div class="pl-4 space-y-1.5">
+                            <p class="text-zinc-300">"<span class="text-emerald-400">Laravel</span>",</p>
+                            <p class="text-zinc-300">"<span class="text-emerald-400">Next.js</span>",</p>
+                            <p class="text-zinc-300">"<span class="text-emerald-400">React</span>",</p>
+                            <p class="text-zinc-300">"<span class="text-emerald-400">Python</span>"</p>
+                        </div>
+                        <p class="text-zinc-400 mt-2">];</p>
+                    </div>
+
+                    <div class="absolute bottom-12 -right-4 md:-right-10 bg-[#050505]/95 border border-brand-800/60 px-4 py-3 rounded-lg shadow-[0_10px_30px_rgba(0,0,0,0.5)] z-30 transition-all duration-700 ease-out group-hover:-translate-y-3 group-hover:translate-x-2 group-hover:border-brand-500/50 premium-card font-mono text-xs transform-gpu">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-brand-500 animate-pulse">▶</span>
+                            <span class="text-zinc-400">locate</span>
+                            <span class="text-blue-400">--user</span>
+                            <span class="text-white">luthfi</span>
+                        </div>
+                        <p class="text-emerald-400 pl-4">> Jakarta, ID</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about-detail" class="w-full py-24 border-t border-brand-800/40 relative bg-black/30 shadow-[inset_0_4px_40px_rgba(0,0,0,0.3)]">
+        
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-[1px] bg-gradient-to-r from-transparent via-brand-500/50 to-transparent transform-gpu"></div>
+
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <div class="flex items-center justify-between mb-16 reveal-up">
+                <h2 class="text-3xl md:text-4xl font-serif font-semibold text-zinc-100 drop-shadow-md">About Me</h2>
+                <div class="h-[1px] bg-brand-800/50 flex-grow ml-8"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 reveal-left delay-100 space-y-6 text-zinc-400 font-light leading-relaxed text-sm md:text-base">
+                    <p>
+                        As an Informatics graduate from <span class="text-brand-300 font-medium">Telkom University</span> (2025), I approach software engineering with a meticulous eye for detail and a relentless drive for perfection. My journey isn't just about writing lines of code—it's about architecting systems that are robust, secure, and visually elegant.
+                    </p>
+                    <p>
+                        From digitizing critical government infrastructures at the Ministry of Transmigration to conducting comparative academic research on Large Language Models, I thrive at the intersection of <span class="text-brand-300 font-medium">Full-Stack Development, IT Management, and Artificial Intelligence</span>.
+                    </p>
+                    <p>
+                        I am highly iterative in my workflow. I believe that a great product is built through continuous refinement—tweaking every layout, securing every endpoint, and optimizing every architecture until the final result is nothing short of a masterpiece.
+                    </p>
+                    
+                    <div class="pt-4">
+                        <a href="file/CV Resume_M Luthfi Aditya Gunandi.pdf" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center gap-3 bg-brand-900/20 text-brand-300 border border-brand-500/50 hover:bg-brand-500 hover:text-white hover:border-brand-400 hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] transition-all duration-500 ease-out px-8 py-3.5 rounded-xl text-xs font-bold tracking-widest uppercase overflow-hidden transform-gpu">
+                            <span class="relative z-10 flex items-center gap-2">
+                                View CV
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-brand-600/0 via-brand-400/10 to-brand-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
+                        </a>
+                    </div>
+                </div> 
+
+                <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                    <div class="reveal-scale delay-100 group bg-black/20 border border-brand-800/50 hover:border-brand-400 p-6 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.15)] premium-card relative overflow-hidden transform-gpu">
+                        <div class="card-glow"></div>
+                        <div class="w-10 h-10 mb-3 rounded-full bg-brand-900/50 flex items-center justify-center text-brand-400 group-hover:text-brand-300 group-hover:scale-110 transition-all duration-300 magnetic-icon relative z-10">
+                            <svg class="w-5 h-5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h4 class="text-3xl font-serif font-bold text-white mb-1 relative z-10"><span class="counter-value" data-target="7">0</span>+</h4>
+                        <p class="text-[10px] tracking-widest uppercase text-zinc-500 relative z-10">Major Projects</p>
+                    </div>
+
+                    <div class="reveal-scale delay-200 group bg-black/20 border border-brand-800/50 hover:border-brand-400 p-6 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.15)] premium-card relative overflow-hidden transform-gpu">
+                        <div class="card-glow"></div>
+                        <div class="w-10 h-10 mb-3 rounded-full bg-brand-900/50 flex items-center justify-center text-brand-400 group-hover:text-brand-300 group-hover:scale-110 transition-all duration-300 magnetic-icon relative z-10">
+                            <svg class="w-5 h-5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        </div>
+                        <h4 class="text-3xl font-serif font-bold text-white mb-1 relative z-10"><span class="counter-value" data-target="2">0</span>+</h4>
+                        <p class="text-[10px] tracking-widest uppercase text-zinc-500 relative z-10">AI Researches</p>
+                    </div>
+
+                  <div class="reveal-scale delay-100 group bg-black/20 border border-brand-800/50 hover:border-brand-400 p-6 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.15)] premium-card relative overflow-hidden transform-gpu">
+                        <div class="card-glow"></div>
+                        <div class="w-10 h-10 mb-3 rounded-full bg-brand-900/50 flex items-center justify-center text-brand-400 group-hover:text-brand-300 group-hover:scale-110 transition-all duration-300 magnetic-icon relative z-10">
+                            <svg class="w-5 h-5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                        </div>
+                        <h4 class="text-3xl font-serif font-bold text-white mb-1 relative z-10"><span class="counter-value" data-target="100">0</span>%</h4>
+                        <p class="text-[10px] tracking-widest uppercase text-zinc-500 relative z-10">Logical Precision</p>
+                    </div>
+
+                    <div class="reveal-scale delay-200 group bg-black/20 border border-brand-800/50 hover:border-brand-400 p-6 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.15)] premium-card relative overflow-hidden transform-gpu">
+                        <div class="card-glow"></div>
+                        <div class="w-10 h-10 mb-3 rounded-full bg-brand-900/50 flex items-center justify-center text-brand-400 group-hover:text-brand-300 group-hover:scale-110 transition-all duration-300 magnetic-icon relative z-10">
+                            <svg class="w-5 h-5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        </div>
+                        <h4 class="text-3xl font-serif font-bold text-white mb-1 relative z-10">IT</h4>
+                        <p class="text-[10px] tracking-widest uppercase text-zinc-500 relative z-10">Gov. Junior Specialist</p>
+                    </div>
+
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 border-t border-brand-800/40 relative overflow-hidden bg-gradient-to-b from-[#021812]/80 via-transparent to-transparent">
+        
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-500/5 rounded-full pointer-events-none transform-gpu"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-700/5 rounded-full pointer-events-none transform-gpu"></div>
+
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-[1px] bg-gradient-to-r from-transparent via-brand-500/50 to-transparent"></div>
+        
+        <div class="max-w-5xl mx-auto px-6 mb-16 reveal-up relative z-10"> 
+            <div class="flex items-center justify-between">
+                <h2 class="text-3xl md:text-4xl font-serif font-semibold text-zinc-100 drop-shadow-md">Selected Works</h2>
+                <div class="h-[1px] bg-brand-800/50 flex-grow ml-8"></div>
+            </div>
+            <p class="text-sm text-brand-400/80 font-medium tracking-widest uppercase mt-4">Projects expertise</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 mb-16 reveal-up delay-100 relative z-10">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="text-xl font-serif text-white flex items-center gap-3">
+                    <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    Web & IT Infrastructure
+                </h3>
+                <div class="flex gap-2">
+                    <button id="web-prev" onclick="slideCarousel('web-carousel', -1)" class="w-10 h-10 rounded-full bg-brand-900/30 border border-brand-800/50 flex items-center justify-center text-zinc-400 hover:text-brand-300 hover:bg-brand-500/20 hover:border-brand-400 transition-all duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button id="web-next" onclick="slideCarousel('web-carousel', 1)" class="w-10 h-10 rounded-full bg-brand-900/30 border border-brand-800/50 flex items-center justify-center text-zinc-400 hover:text-brand-300 hover:bg-brand-500/20 hover:border-brand-400 transition-all duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="web-carousel" class="flex gap-6 overflow-x-auto hide-scrollbar snap-x snap-mandatory scroll-smooth pb-8 pt-2 transform-gpu">
+                
+                <div class="w-[85vw] md:w-[400px] flex-shrink-0 snap-center group flex flex-col bg-black/20 border border-brand-800/50 hover:border-brand-400 hover:bg-brand-900/20 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.1)] transition-all duration-500 ease-out relative overflow-hidden rounded-xl premium-card transform-gpu">
+                    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-20"></div>
+                    
+                    <div class="w-full h-48 relative overflow-hidden border-b border-brand-800/50 z-10 transform-gpu">
+                        <div class="absolute inset-0 bg-brand-950/40 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
+                        <img src="img/konten/6.jpeg" alt="Project 1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    </div>
+
+                    <div class="p-6 md:p-8 flex flex-col flex-grow relative z-10">
+                        <h3 class="text-xl font-serif text-zinc-100 mb-3 group-hover:text-brand-300 transition-colors duration-300">Transmigration Info System</h3>
+                        <p class="text-zinc-400 text-sm flex-grow mb-6 leading-relaxed font-light group-hover:text-zinc-300 transition-colors duration-300">Spearheaded the development of a comprehensive web platform to support digitalization and streamline data services within the government transmigration sector.</p>
+                        <div class="flex flex-col gap-2 mb-8">
+                            <a href="https://github.com/luthfidty/sit-transmigrasi.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg> Source Code (GitHub)
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Laravel</span>
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Next.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[85vw] md:w-[400px] flex-shrink-0 snap-center group flex flex-col bg-black/20 border border-brand-800/50 hover:border-brand-400 hover:bg-brand-900/20 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.1)] transition-all duration-500 ease-out relative overflow-hidden rounded-xl premium-card transform-gpu">
+                    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-20"></div>
+                    
+                    <div class="w-full h-48 relative overflow-hidden border-b border-brand-800/50 z-10 transform-gpu">
+                        <div class="absolute inset-0 bg-brand-950/40 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
+                        <img src="img/konten/3.png" alt="Project 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    </div>
+
+                    <div class="p-6 md:p-8 flex flex-col flex-grow relative z-10">
+                        <h3 class="text-xl font-serif text-zinc-100 mb-3 group-hover:text-brand-300 transition-colors duration-300">CKAN Open Data Portal</h3>
+                        <p class="text-zinc-400 text-sm flex-grow mb-6 leading-relaxed font-light group-hover:text-zinc-300 transition-colors duration-300">Managed an open data portal utilizing CKAN, alongside comprehensive maintenance of department servers and cybersecurity protocols.</p>
+                        <div class="flex flex-col gap-2 mb-8">
+                            <a href="https://github.com/luthfidty/portal-satu-data-transmigrasi.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg> Source Code (GitHub)
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Docker</span>
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">CKAN</span>
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Linux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[85vw] md:w-[400px] flex-shrink-0 snap-center group flex flex-col bg-black/20 border border-brand-800/50 hover:border-brand-400 hover:bg-brand-900/20 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.1)] transition-all duration-500 ease-out relative overflow-hidden rounded-xl premium-card transform-gpu">
+                    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-20"></div>
+                    
+                    <div class="w-full h-48 relative overflow-hidden border-b border-brand-800/50 z-10 transform-gpu">
+                        <div class="absolute inset-0 bg-brand-950/40 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
+                        <img src="img/konten/7.jpeg" alt="Project 3" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    </div>
+
+                    <div class="p-6 md:p-8 flex flex-col flex-grow relative z-10">
+                        <h3 class="text-xl font-serif text-zinc-100 mb-3 group-hover:text-brand-300 transition-colors duration-300">Spatial Mapping & Zoning</h3>
+                        <p class="text-zinc-400 text-sm flex-grow mb-6 leading-relaxed font-light group-hover:text-zinc-300 transition-colors duration-300">Engineered interactive mapping features to visualize complex spatial data across transmigration areas, implementing advanced geocoding techniques.</p>
+                        <div class="flex flex-col gap-2 mb-8">
+                            <a href="https://github.com/luthfidty/sit-transmigrasi.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg> Source Code (GitHub)
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Leaflet.js</span>
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[85vw] md:w-[400px] flex-shrink-0 snap-center group flex flex-col bg-black/20 border border-brand-800/50 hover:border-brand-400 hover:bg-brand-900/20 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.1)] transition-all duration-500 ease-out relative overflow-hidden rounded-xl premium-card transform-gpu">
+                    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-20"></div>
+                    
+                    <div class="w-full h-48 relative overflow-hidden border-b border-brand-800/50 z-10 transform-gpu">
+                        <div class="absolute inset-0 bg-brand-950/40 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
+                        <img src="img/konten/2.png" alt="Project 4" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    </div>
+
+                    <div class="p-6 md:p-8 flex flex-col flex-grow relative z-10">
+                        <h3 class="text-xl font-serif text-zinc-100 mb-3 group-hover:text-brand-300 transition-colors duration-300">JDIH Legal Portal & Attendance</h3>
+                        <p class="text-zinc-400 text-sm flex-grow mb-6 leading-relaxed font-light group-hover:text-zinc-300 transition-colors duration-300">Revamped the Legal Information Network portal, integrating user satisfaction surveys, and engineered a robust internal meeting attendance system.</p>
+                        <div class="flex flex-col gap-2 mb-8">
+                            <a href="https://github.com/luthfidty/jdih-trans.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg> JDIH Source Code
+                            </a>
+                            <a href="https://github.com/luthfidty/presensi-rapat.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg> Attendance Source
+                            </a>
+                            <a href="https://presensi-rapat.transmigrasi.go.id/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg> Live System
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Web Dev</span>
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">UI / UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[85vw] md:w-[400px] flex-shrink-0 snap-center group flex flex-col bg-black/20 border border-brand-800/50 hover:border-brand-400 hover:bg-brand-900/20 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.1)] transition-all duration-500 ease-out relative overflow-hidden rounded-xl premium-card transform-gpu">
+                    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-20"></div>
+                    
+                    <div class="w-full h-48 relative overflow-hidden border-b border-brand-800/50 z-10 transform-gpu">
+                        <div class="absolute inset-0 bg-brand-950/40 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
+                        <img src="img/konten/4.png" alt="Project 5" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    </div>
+
+                    <div class="p-6 md:p-8 flex flex-col flex-grow relative z-10">
+                        <h3 class="text-xl font-serif text-zinc-100 mb-3 group-hover:text-brand-300 transition-colors duration-300">Company Profile</h3>
+                        <p class="text-zinc-400 text-sm flex-grow mb-6 leading-relaxed font-light group-hover:text-zinc-300 transition-colors duration-300">Developed a professional corporate website for Luthfie Jaya, a vegetable supply business, establishing their digital footprint and showcasing their products.</p>
+                        <div class="flex flex-col gap-2 mb-8">
+                            <a href="https://github.com/luthfidty/web-luthfie-jaya.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg> Source Code
+                            </a>
+                            <a href="https://luthfiejaya.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg> Live Website
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[85vw] md:w-[400px] flex-shrink-0 snap-center group flex flex-col bg-black/20 border border-brand-800/50 hover:border-brand-400 hover:bg-brand-900/20 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.1)] transition-all duration-500 ease-out relative overflow-hidden rounded-xl premium-card transform-gpu">
+                    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-20"></div>
+                    
+                    <div class="w-full h-48 relative overflow-hidden border-b border-brand-800/50 z-10 transform-gpu">
+                        <div class="absolute inset-0 bg-brand-950/40 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
+                        <img src="img/konten/5.png" alt="Project 6" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    </div>
+
+                    <div class="p-6 md:p-8 flex flex-col flex-grow relative z-10">
+                        <h3 class="text-xl font-serif text-zinc-100 mb-3 group-hover:text-brand-300 transition-colors duration-300">Ticketing System for IT</h3>
+                        <p class="text-zinc-400 text-sm flex-grow mb-6 leading-relaxed font-light group-hover:text-zinc-300 transition-colors duration-300">Developed a centralized IT helpdesk and ticketing platform for Pusdatin to streamline technical issue reporting and improve departmental response times.</p>
+                        <div class="flex flex-col gap-2 mb-8">
+                            <a href="https://github.com/luthfidty/it-helpdesk-transmigrasi.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg> Source Code
+                            </a>
+                            <a href="https://it-helpdesk.transmigrasi.go.id/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg> Live Portal
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Fullstack</span>
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">IT Management</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-[85vw] md:w-[300px] flex-shrink-0 snap-center flex items-center justify-center">
+                    <a href="https://github.com/luthfidty" target="_blank" rel="noopener noreferrer" class="group flex flex-col items-center justify-center text-center gap-4 bg-brand-950/30 px-6 py-10 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-full cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] hover:-translate-y-1 relative z-10 transform-gpu">
+                        <div class="flex items-center justify-center w-14 h-14 bg-brand-900/50 rounded-full border border-brand-800/50 group-hover:border-brand-400 transition-colors duration-300">
+                            <svg class="h-6 w-6 text-brand-400 group-hover:text-brand-300 transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">View All Repos</h3>
+                            <p class="text-[10px] text-zinc-500 group-hover:text-brand-400 transition-colors mt-2">Explore more on GitHub</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 reveal-up delay-200 relative z-10">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="text-xl font-serif text-white flex items-center gap-3">
+                    <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    AI & Academic Research
+                </h3>
+                <div class="flex gap-2">
+                    <button id="ai-prev" onclick="slideCarousel('ai-carousel', -1)" class="w-10 h-10 rounded-full bg-brand-900/30 border border-brand-800/50 flex items-center justify-center text-zinc-400 hover:text-brand-300 hover:bg-brand-500/20 hover:border-brand-400 transition-all duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button id="ai-next" onclick="slideCarousel('ai-carousel', 1)" class="w-10 h-10 rounded-full bg-brand-900/30 border border-brand-800/50 flex items-center justify-center text-zinc-400 hover:text-brand-300 hover:bg-brand-500/20 hover:border-brand-400 transition-all duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="ai-carousel" class="flex gap-6 overflow-x-auto hide-scrollbar snap-x snap-mandatory scroll-smooth pb-8 pt-2 transform-gpu">
+                
+                <div class="w-[85vw] md:w-[450px] flex-shrink-0 snap-center group flex flex-col bg-black/20 border border-brand-800/50 hover:border-brand-400 hover:bg-brand-900/20 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.1)] transition-all duration-500 ease-out relative overflow-hidden rounded-xl premium-card transform-gpu">
+                    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-20"></div>
+                    <div class="w-full h-48 relative overflow-hidden border-b border-brand-800/50 z-10 transform-gpu">
+                        <div class="absolute inset-0 bg-brand-950/40 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
+                        <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=800&auto=format&fit=crop" alt="ECG Research" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    </div>
+                    <div class="p-6 md:p-8 flex flex-col flex-grow relative z-10">
+                        <div class="inline-block w-fit px-3 py-1 bg-brand-500/20 border border-brand-500/50 rounded-full mb-4">
+                            <span class="text-[10px] font-bold tracking-widest text-brand-300 uppercase flex items-center gap-2">
+                                <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>
+                                Final Project (Thesis)
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-serif text-zinc-100 mb-3 group-hover:text-brand-300 transition-colors duration-300">Implementation of CNN for ECG Arrhythmia</h3>
+                        <p class="text-zinc-400 text-sm flex-grow mb-6 leading-relaxed font-light group-hover:text-zinc-300 transition-colors duration-300">Engineered a deep learning model utilizing Convolutional Neural Networks (CNN) to automatically classify cardiac arrhythmia conditions based on Electrocardiogram (ECG) data signals.</p>
+                        <div class="flex flex-col gap-2 mb-8">
+                            <a href="https://github.com/luthfidty/arrhythmia-classification.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477-4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg> Explore the Thesis
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Deep Learning</span>
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[85vw] md:w-[450px] flex-shrink-0 snap-center group flex flex-col bg-black/20 border border-brand-800/50 hover:border-brand-400 hover:bg-brand-900/20 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.1)] transition-all duration-500 ease-out relative overflow-hidden rounded-xl premium-card transform-gpu">
+                    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-20"></div>
+                    <div class="w-full h-48 relative overflow-hidden border-b border-brand-800/50 z-10 transform-gpu">
+                        <div class="absolute inset-0 bg-brand-950/40 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop" alt="LLM Research" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    </div>
+                    <div class="p-6 md:p-8 flex flex-col flex-grow relative z-10">
+                        <h3 class="text-xl font-serif text-zinc-100 mb-3 group-hover:text-brand-300 transition-colors duration-300">LLM Performance Analysis</h3>
+                        <p class="text-zinc-400 text-sm flex-grow mb-6 leading-relaxed font-light group-hover:text-zinc-300 transition-colors duration-300">Conducted a comprehensive academic study evaluating the performance of Large Language Models (Gemini and Copilot 4).</p>
+                        <div class="flex flex-col gap-2 mb-8">
+                            <a href="https://github.com/luthfidty/tubes-nlp.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477-4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg> View Research Findings
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Artificial Intelligence</span>
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[85vw] md:w-[450px] flex-shrink-0 snap-center group flex flex-col bg-black/20 border border-brand-800/50 hover:border-brand-400 hover:bg-brand-900/20 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(16,185,129,0.1)] transition-all duration-500 ease-out relative overflow-hidden rounded-xl premium-card transform-gpu">
+                    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-20"></div>
+                    <div class="w-full h-48 relative overflow-hidden border-b border-brand-800/50 z-10 transform-gpu">
+                        <div class="absolute inset-0 bg-brand-950/40 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
+                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=800&auto=format&fit=crop" alt="Hybrid Pipeline Research" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    </div>
+                    <div class="p-6 md:p-8 flex flex-col flex-grow relative z-10">
+                        <h3 class="text-xl font-serif text-zinc-100 mb-3 group-hover:text-brand-300 transition-colors duration-300">
+                            Multi-Model Hybrid Pipeline for Content Discovery
+                        </h3>
+                        <p class="text-zinc-400 text-sm flex-grow mb-6 leading-relaxed font-light group-hover:text-zinc-300 transition-colors duration-300">
+                            Developed a sophisticated recommendation engine utilizing a <strong>Hybrid Pipelined architecture</strong>. By synthesizing <em>Collaborative Filtering, Matrix Factorization, and Content-Based models</em>, the system orchestrates a multi-layered data pipeline to deliver high-precision personalized discovery.
+                        </p>
+                        <div class="flex flex-col gap-2 mb-8">
+                            <a href="https://github.com/luthfidty/sisrek-implementasi.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 transition-colors duration-300 w-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477-4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg> 
+                                Explore Research Repository
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Recommender Systems</span>
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Data Science</span>
+                            <span class="text-[10px] tracking-wider uppercase text-brand-300/80 border border-brand-800/80 bg-brand-900/30 px-3 py-1 rounded-full">Hybrid ML</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="py-24 border-t border-brand-800/40 relative bg-black/40 shadow-[inset_0_0_80px_rgba(0,0,0,0.5)] transform-gpu">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-[1px] bg-gradient-to-r from-transparent via-brand-500/50 to-transparent"></div>
+        
+        <div class="text-center mb-16 max-w-2xl mx-auto relative z-10 px-6 reveal-up">
+            <h2 class="text-3xl md:text-4xl font-serif font-semibold text-zinc-100 mb-4 tracking-tight drop-shadow-md">Tech Stack</h2>
+            <p class="text-sm text-brand-400/80 font-medium tracking-widest uppercase mb-4">What I'm Using</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 relative overflow-hidden rounded-xl reveal-up delay-100">
+            <div class="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-[#010806] to-transparent z-20 pointer-events-none"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#010806] to-transparent z-20 pointer-events-none"></div>
+
+            <div class="marquee-container flex overflow-hidden group w-full relative z-10 mb-6">
+                <div class="flex gap-6 pr-6 animate-scroll-left group-hover:[animation-play-state:paused] w-[max-content]">
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">React</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <div class="bg-white rounded-full p-1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" class="w-8 h-8"></div>
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Next.js</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Laravel</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Tailwind CSS</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Docker</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Linux</h3>
+                    </div>
+
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">React</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <div class="bg-white rounded-full p-1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" class="w-8 h-8"></div>
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Next.js</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Laravel</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Tailwind CSS</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Docker</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Linux</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marquee-container flex overflow-hidden group w-full relative z-10">
+                <div class="flex gap-6 pr-6 animate-scroll-right group-hover:[animation-play-state:paused] w-[max-content]">
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Python</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <div class="bg-white rounded-md p-1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8"></div>
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">JavaScript</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" class="w-12 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">MySQL</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">TypeScript</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Figma</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Git</h3>
+                    </div>
+
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Python</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <div class="bg-white rounded-md p-1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8"></div>
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">JavaScript</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" class="w-12 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">MySQL</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">TypeScript</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Figma</h3>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#050f0a]/90 px-6 py-4 border border-brand-800/60 hover:border-brand-400 rounded-2xl w-[260px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transform-gpu">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" class="w-10 h-10">
+                        <h3 class="text-sm font-bold tracking-widest uppercase text-zinc-300 group-hover:text-white transition-colors">Git</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="w-full py-24 border-t border-brand-800/40 relative z-10 bg-gradient-to-b from-transparent to-[#010806]">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-[1px] bg-gradient-to-r from-transparent via-brand-500/50 to-transparent"></div>
+        
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="text-3xl md:text-4xl font-serif font-semibold text-zinc-100 drop-shadow-md">Get In Touch</h2>
+                <p class="text-sm text-brand-400/80 font-medium tracking-widest uppercase mt-4">Let's build something together</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 reveal-left delay-100 flex flex-col justify-center">
+                    <h3 class="text-2xl font-serif text-white mb-4">Let's Connect</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed font-light mb-8">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to collaborate. Whether it's a web platform, IT infrastructure, or AI research, let's make it happen.
+                    </p>
+
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-full bg-brand-900/30 border border-brand-800/50 flex items-center justify-center text-brand-400 group-hover:bg-brand-500/20 group-hover:border-brand-400 transition-all duration-300">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-[10px] tracking-widest uppercase text-zinc-500">Email</p>
+                                <a href="#" class="email-protect text-sm text-zinc-300 hover:text-brand-300 transition-colors" data-user="luthfiaditya28" data-domain="gmail.com">Kirim Email</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-full bg-brand-900/30 border border-brand-800/50 flex items-center justify-center text-brand-400 group-hover:bg-brand-500/20 group-hover:border-brand-400 transition-all duration-300">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-[10px] tracking-widest uppercase text-zinc-500">Location</p>
+                                <p class="text-sm text-zinc-300">Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-[10px] tracking-widest uppercase text-zinc-500 mb-3">Available for freelance opportunities</p>
+                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-brand-900/20 border border-brand-800/50 w-fit">
+                        <span class="relative flex h-2.5 w-2.5">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-500"></span>
+                        </span>
+                        <span class="text-xs font-medium text-brand-300 tracking-wider">Currently Available</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 reveal-right delay-200 mt-10 lg:mt-0">
+                    <form id="contactForm" action="https://formspree.io/f/xeepdgyd" method="POST" class="bg-black/20 p-8 border border-brand-800/50 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.2)] flex flex-col gap-6 relative overflow-hidden">
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label for="name" class="text-[10px] font-bold tracking-widest uppercase text-brand-400/80">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name" class="bg-black/40 border border-brand-800/60 rounded-xl px-4 py-3 text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 focus:bg-brand-950/30 transition-all duration-300">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="email" class="text-[10px] font-bold tracking-widest uppercase text-brand-400/80">Email</label>
+                                <input type="email" id="email" name="_replyto" required placeholder="your.email@example.com" class="bg-black/40 border border-brand-800/60 rounded-xl px-4 py-3 text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 focus:bg-brand-950/30 transition-all duration-300">
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col gap-2">
+                            <label for="subject" class="text-[10px] font-bold tracking-widest uppercase text-brand-400/80">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What's this about?" class="bg-black/40 border border-brand-800/60 rounded-xl px-4 py-3 text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 focus:bg-brand-950/30 transition-all duration-300">
+                        </div>
+                        
+                        <div class="flex flex-col gap-2">
+                            <label for="message" class="text-[10px] font-bold tracking-widest uppercase text-brand-400/80">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..." class="bg-black/40 border border-brand-800/60 rounded-xl px-4 py-3 text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 focus:bg-brand-950/30 transition-all duration-300 resize-none"></textarea>
+                        </div>
+
+                        <input type="hidden" name="_next" value="#">
+                        
+                        <button type="submit" id="submitBtn" class="group relative w-full inline-flex items-center justify-center bg-brand-600 text-white border border-brand-500 hover:border-brand-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] transition-all duration-500 ease-out px-8 py-4 rounded-xl text-xs font-bold tracking-widest uppercase overflow-hidden mt-2">
+                            <span id="btnText" class="relative z-10 flex items-center gap-2 transition-all duration-300">
+                                Send Message
+                                <svg id="btnIcon" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                            </span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-brand-500 to-brand-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-20 pb-10 border-t border-brand-800/40 bg-[#010806] relative z-10 w-full overflow-hidden block reveal-up">
+        <div class="max-w-5xl mx-auto px-6">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                
+                <div class="md:col-span-1">
+                    <a href="#" class="font-serif text-3xl font-semibold text-brand-100 tracking-wide hover:text-brand-300 transition-colors duration-300 drop-shadow-md inline-block mb-4">Luthfi.</a>
+                    <p class="text-zinc-400 text-sm font-light leading-relaxed pr-4">
+                        Architecting reliable systems and crafting digital elegance through robust engineering.
+                    </p>
+                </div>
+
+                <div class="md:col-span-1">
+                    <h4 class="text-xs font-bold tracking-widest uppercase text-brand-400 mb-6">Explore</h4>
+                    <nav class="flex flex-col gap-3 text-sm text-zinc-400 font-light">
+                        <a href="#about" class="hover:text-white hover:translate-x-1 transition-all duration-300 w-fit">About Me</a>
+                        <a href="#projects" class="hover:text-white hover:translate-x-1 transition-all duration-300 w-fit">Selected Works</a>
+                        <a href="#tech" class="hover:text-white hover:translate-x-1 transition-all duration-300 w-fit">Tech Stack</a>
+                        <a href="#contact" class="hover:text-white hover:translate-x-1 transition-all duration-300 w-fit">Contact</a>
+                    </nav>
+                </div>
+
+                <div class="md:col-span-1">
+                    <h4 class="text-xs font-bold tracking-widest uppercase text-brand-400 mb-6">Connect</h4>
+                    <div class="flex items-center gap-4">
+                        <a href="https://www.linkedin.com/in/luthfi-aditya-7b1185181/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-brand-900/30 border border-brand-800/50 flex items-center justify-center text-zinc-400 hover:text-brand-300 hover:bg-brand-500/20 hover:border-brand-400 transition-all duration-300 hover:-translate-y-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        
+                        <a href="https://github.com/luthfidty" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-10 h-10 rounded-full bg-brand-900/30 border border-brand-800/50 flex items-center justify-center text-zinc-400 hover:text-brand-300 hover:bg-brand-500/20 hover:border-brand-400 transition-all duration-300 hover:-translate-y-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+
+                        <a href="mailto:luthfiaditya28@gmail.com" aria-label="Email" class="w-10 h-10 rounded-full bg-brand-900/30 border border-brand-800/50 flex items-center justify-center text-zinc-400 hover:text-brand-300 hover:bg-brand-500/20 hover:border-brand-400 transition-all duration-300 hover:-translate-y-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </a>
+
+                        <a href="https://instagram.com/luthfidty" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-full bg-brand-900/30 border border-brand-800/50 flex items-center justify-center text-zinc-400 hover:text-brand-300 hover:bg-brand-500/20 hover:border-brand-400 transition-all duration-300 hover:-translate-y-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-brand-800/40 flex flex-col md:flex-row justify-between items-center gap-4 relative z-20">
+                <p class="text-xs text-zinc-500 font-light tracking-wider text-center md:text-left mb-0">
+                    &copy; <span id="currentYear"></span>. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            const yearEl = document.getElementById('currentYear');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('bg-brand-950/80', 'border-brand-800/50', 'shadow-lg', 'shadow-black/20');
+                    navbar.classList.remove('bg-transparent', 'border-transparent');
+                } else {
+                    navbar.classList.remove('bg-brand-950/80', 'border-brand-800/50', 'shadow-lg', 'shadow-black/20');
+                    navbar.classList.add('bg-transparent', 'border-transparent');
+                }
+            }, { passive: true });
+
+            const observerOptions = {
+                root: null, 
+                rootMargin: '0px 0px -10% 0px', 
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-visible');
+                    } else {
+                        entry.target.classList.remove('reveal-visible');
+                    }
+                });
+            }, observerOptions);
+
+            const revealElements = document.querySelectorAll('[class*="reveal-"]');
+            revealElements.forEach(el => observer.observe(el));
+
+            const canvas = document.getElementById('network-canvas');
+            if(canvas) {
+                const ctx = canvas.getContext('2d');
+                let width, height, particles;
+
+                // MENGURANGI PARTIKEL DARI 60 MENJADI 30 AGAR TIDAK LAG SAAT SCROLL
+                const particleCount = 30; 
+                const connectionDistance = 150; 
+                const moveSpeed = 0.12; 
+
+                function init() {
+                    width = canvas.width = window.innerWidth;
+                    height = canvas.height = window.innerHeight;
+                    particles = [];
+
+                    for (let i = 0; i < particleCount; i++) {
+                        particles.push(new Particle());
+                    }
+                }
+
+                class Particle {
+                    constructor() {
+                        this.x = Math.random() * width;
+                        this.y = Math.random() * height;
+                        this.vx = (Math.random() - 0.5) * moveSpeed;
+                        this.vy = (Math.random() - 0.5) * moveSpeed;
+                        this.radius = Math.random() * 2 + 0.5;
+                    }
+
+                    update() {
+                        this.x += this.vx;
+                        this.y += this.vy;
+
+                        if (this.x < 0 || this.x > width) this.vx = -this.vx;
+                        if (this.y < 0 || this.y > height) this.vy = -this.vy;
+                    }
+
+                    draw() {
+                        ctx.beginPath();
+                        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                        ctx.fillStyle = 'rgba(16, 185, 129, 0.4)'; 
+                        ctx.fill();
+                    }
+                }
+
+                function animate() {
+                    requestAnimationFrame(animate);
+                    ctx.clearRect(0, 0, width, height);
+                    
+                    for (let i = 0; i < particles.length; i++) {
+                        particles[i].update();
+                        particles[i].draw();
+                        
+                        for (let j = i + 1; j < particles.length; j++) {
+                            const dx = particles[i].x - particles[j].x;
+                            const dy = particles[i].y - particles[j].y;
+                            const distance = Math.sqrt(dx * dx + dy * dy);
+                            
+                            if (distance < connectionDistance) {
+                                ctx.beginPath();
+                                ctx.moveTo(particles[i].x, particles[i].y);
+                                ctx.lineTo(particles[j].x, particles[j].y);
+                                
+                                const opacity = 1 - (distance / connectionDistance);
+                                ctx.strokeStyle = `rgba(16, 185, 129, ${opacity * 0.25})`; 
+                                ctx.lineWidth = 1;
+                                ctx.stroke();
+                            }
+                        }
+                    }
+                }
+
+                window.addEventListener('resize', init);
+                init();
+                animate();
+            }
+
+            const carouselsOtis = [
+                { id: 'web-carousel', interval: 5000 }, 
+                { id: 'ai-carousel', interval: 4000 }  
+            ];
+
+            carouselsOtis.forEach(c => {
+                const container = document.getElementById(c.id);
+                if (container) {
+                    setInterval(() => {
+                        const scrollAmount = 400; 
+                        container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+
+                        if (Math.ceil(container.scrollLeft + container.clientWidth) >= container.scrollWidth - 2) {
+                            container.scrollTo({ left: 0, behavior: 'smooth' });
+                        }
+                    }, c.interval);
+                }
+            });
+
+            const typingTagline = document.getElementById('typing-tagline');
+            if(typingTagline) {
+                typingTagline.innerHTML = ''; 
+
+                const promptSpan = document.createElement('span');
+                promptSpan.className = 'prompt';
+                promptSpan.textContent = "~/luthfi $ ";
+                
+                const textSpan = document.createElement('span');
+                textSpan.className = 'content';
+                
+                const cursorSpan = document.createElement('span');
+                cursorSpan.className = 'cursor';
+                cursorSpan.textContent = '_';
+                
+                typingTagline.appendChild(promptSpan);
+                typingTagline.appendChild(textSpan);
+                typingTagline.appendChild(cursorSpan);
+                
+                const taglineText = "Architecting reliable systems and crafting digital elegance through robust engineering";
+                let charIndex = 0;
+                let isDeleting = false; 
+                
+                function typeEffect() {
+                    if (!isDeleting && charIndex < taglineText.length) {
+                        textSpan.textContent += taglineText.charAt(charIndex);
+                        charIndex++;
+                        setTimeout(typeEffect, Math.random() * (60 - 30) + 30);
+                    } 
+                    else if (isDeleting && charIndex > 0) {
+                        textSpan.textContent = taglineText.substring(0, charIndex - 1);
+                        charIndex--;
+                        setTimeout(typeEffect, Math.random() * (30 - 15) + 15);
+                    } 
+                    else if (!isDeleting && charIndex === taglineText.length) {
+                        isDeleting = true;
+                        setTimeout(typeEffect, 3000);
+                    } 
+                    else if (isDeleting && charIndex === 0) {
+                        isDeleting = false;
+                        setTimeout(typeEffect, 1000);
+                    }
+                }
+                setTimeout(typeEffect, 1000);
+            }
+        });
+
+        window.addEventListener('pageshow', function(event) {
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.reset();
+            }
+        });
+
+        window.slideCarousel = function(containerId, direction) {
+            const container = document.getElementById(containerId);
+            if (container) {
+                const scrollAmount = 400 * direction;
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+
+        const counters = document.querySelectorAll('.counter-value');
+        const speed = 200; 
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    const updateCount = () => {
+                        const targetNum = +target.getAttribute('data-target');
+                        const count = +target.innerText;
+                        
+                        const inc = targetNum / speed;
+
+                        if (count < targetNum) {
+                            target.innerText = Math.ceil(count + inc);
+                            setTimeout(updateCount, 15); 
+                        } else {
+                            target.innerText = targetNum; 
+                        }
+                    };
+
+                    updateCount();
+                    counterObserver.unobserve(target); 
+                }
+            });
+        }, { threshold: 0.5 }); 
+
+        counters.forEach(counter => counterObserver.observe(counter));
+
+        const magneticIcons = document.querySelectorAll('.magnetic-icon');
+        
+        magneticIcons.forEach(icon => {
+            const card = icon.closest('.premium-card'); 
+            
+            if(card) {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = icon.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    
+                    icon.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    icon.style.transform = 'translate(0px, 0px)';
+                });
+            }
+        });
+
+        const emailLinks = document.querySelectorAll('.email-protect');
+        emailLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const user = this.getAttribute('data-user');
+                const domain = this.getAttribute('data-domain');
+                window.location.href = 'mailto:' + user + '@' + domain;
+            });
+        });
+    </script>
+</body>
+</html>
