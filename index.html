@@ -1025,6 +1025,41 @@
                 window.location.href = 'mailto:' + user + '@' + domain;
             });
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+    // Ambil semua bagian web yang punya ID (seperti id="about", id="work")
+    const sections = document.querySelectorAll('section[id]');
+
+    // Pengaturan sensor (Trigger saat 50% bagian layar masuk ke section tersebut)
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5 
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Ambil nama ID dari section yang sedang dilihat
+                const id = entry.target.getAttribute('id');
+                
+                // Ubah huruf pertama jadi kapital (contoh: 'about' -> 'About')
+                const titleName = id.charAt(0).toUpperCase() + id.slice(1);
+
+                // 1. Ubah tulisan di Tab Browser
+                document.title = `${titleName} | Luthfi Aditya`;
+
+                // 2. Ubah link URL di atas diam-diam (tanpa loading)
+                history.replaceState(null, null, `#${id}`);
+            }
+        });
+    }, observerOptions);
+
+    // Pasang sensor ke semua section
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
     </script>
 </body>
 </html>
